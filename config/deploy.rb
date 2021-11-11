@@ -6,6 +6,7 @@ set :repo_url, "git@github.com:nilun132/myapp.git"
 set :user,            'nilun'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
+set :rvm_ruby_version, '3.0.2'
 
 # Deploy to the user's home directory
 set :pty,             true
