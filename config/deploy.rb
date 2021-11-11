@@ -7,6 +7,7 @@ set :user,            'nilun'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 set :rvm_ruby_version, '3.0.2'
+set :branch, "main"
 
 # Deploy to the user's home directory
 set :pty,             true
@@ -23,6 +24,7 @@ set :ssh_options, forward_agent: false, user: fetch(:user)
 set :puma_preload_app, true
 set :puma_worker_timeout, nil
 set :puma_init_active_record, true
+
 # Only keep the last 5 releases to save disk space
 namespace :puma do
     desc 'Create Directories for Puma Pids and Socket'
