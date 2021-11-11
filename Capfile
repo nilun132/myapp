@@ -14,6 +14,7 @@ require "capistrano/deploy"
 # or
 require "capistrano/scm/git"
 # Include tasks from other gems included in your Gemfile
+install_plugin Capistrano::SCM::Git
 #
 # For documentation on these, see for example:
 #
@@ -36,7 +37,6 @@ require "capistrano/rails/migrations"
 require "capistrano/passenger"
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
-install_plugin Capistrano::SCM::Git
 
 Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
 
