@@ -1,5 +1,7 @@
 # server-based syntax
 # ======================
+server '150.95.81.117', port: 22, roles: [:web, :app, :db], primary: true
+
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
