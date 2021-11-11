@@ -25,6 +25,8 @@ set :puma_preload_app, true
 set :puma_worker_timeout, nil
 set :puma_init_active_record, true
 
+set :linked_files, %w{config/master.key}
+
 # Only keep the last 5 releases to save disk space
 namespace :puma do
     desc 'Create Directories for Puma Pids and Socket'
