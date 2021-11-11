@@ -31,7 +31,6 @@ require "capistrano/rvm"
 require 'capistrano/rails'
 require "capistrano/bundler"
 require 'capistrano/puma'
-require 'capistrano/ssh_doctor'
 # require "capistrano/rails/assets"
 require "capistrano/rails/migrations"
 require "capistrano/passenger"
